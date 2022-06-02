@@ -6,86 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="sample site resume" />
     <meta name="keywords" content="cv, resume, sample" />
+    <link rel="stylesheet" href="01_selectors.css" />
+    <link rel="stylesheet" href="02_fonts.css" />
+    <link rel="stylesheet" href="03_colors.css" />
+    <link rel="stylesheet" href="04_borders.css" />
+    <link rel="stylesheet" href="05_box.css" />
+    <link rel="stylesheet" href="06_links.css" />
+    <link rel="stylesheet" href="07_lists_tables.css" />
+    <link rel="stylesheet" href="08_display.css" />
+    <link rel="stylesheet" href="09_positions.css" />
+    <link rel="stylesheet" href="10_media.css" />
+
     <title>Resume</title>
   </head>
-  <body style="background-color: #ddd">
-    <img src="img\MB.jpg" alt="Картинка" width="200" />
-    <h1>Metallist Balalaikin</h1>
+  <!-- <body style="background-color: #ddd"> -->
+  <body>
+    <div class="container">
+      <div class="info">
+        <!-- <div class="photo"> -->
+        <!-- <img src="img\MB.jpg" alt="Картинка"  -->
+        <img src="MB.jpg" alt="Картинка" class="avatar" />
+        <!-- </div> -->
+        <div class="info-text">
+          <h1 class="name">Metallist Balalaikin</h1>
+          <p>
+            Он из <em>ведра</em> и из <em>фанеры</em> гад
+            <br />
+            Себе гитару cделал весь отпад
+          </p>
+          <p>
+            И проиграв чего-то пару раз
+            <br />
+            Он разбудил <strong>деревню</strong>
+          </p>
 
-    <p>
-      Он из <em>ведра</em> и из <em>фанеры</em> гад
-      <br />
-      Себе гитару cделал весь отпад
-    </p>
-
-    <p>
-      И проиграв чего-то пару раз
-      <br />
-      Он разбудил <strong>деревню</strong>
-    </p>
-
-    <h4>Список социальных сетей</h4>
-    <a href="https://translate.google.ru/" target="_blank">NEKTO.ME</a>
-    |
-    <a href="https://www.youtube.com/" target="_blank">Bebo</a>
-    |
-    <a href="https://www.google.com/" target="_blank">TUMBLR</a>
-
-    <h2>My list</h2>
-
-    <ol>
-      <li>String 1</li>
-      <li>String 2</li>
-      <li>String 3</li>
-    </ol>
-
-    <h2>My Table</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Column1</th>
-          <th>Column2</th>
-          <th>Column3</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Str1Clmn1</td>
-          <td>Str1Clmn2</td>
-          <td>Str1Clmn3</td>
-        </tr>
-        <tr>
-          <td>Str2Clmn1</td>
-          <td>Str2Clmn2</td>
-          <td>Str2Clmn3</td>
-        </tr>
-        <tr>
-          <td>Str3Clmn1</td>
-          <td>Str3Clmn2</td>
-          <td>Str3Clmn3</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2>Заполнить форму для подачи документов в ЦРУ</h2>
-    <form action="/">
-      <div>
-        <label for="name">Имя:</label>
-        <input type="text" id="name" placeholder="Введите имя" />
+          <h4>Список социальных сетей</h4>
+          <a href="https://translate.google.ru/" target="_blank">NEKTO.ME</a>
+          |
+          <a href="https://www.youtube.com/" target="_blank">Bebo</a>
+          |
+          <a href="https://www.google.com/" target="_blank">TUMBLR</a>
+        </div>
       </div>
-      <div>
-        <label for="email">email:</label>
-        <input type="email" id="email" placeholder="Введите email" />
+
+      <div class="card bg-green">
+        <h2>My list</h2>
+        <ol class="list">
+          <li>String 1</li>
+          <li>String 2</li>
+          <li>String 3</li>
+        </ol>
       </div>
-      <div>
-        <label for="message">сообщение:</label>
-        <textarea
-          id="message"
-          cols="20"
-          rows="5"
-          placeholder="Введите сообщение"
-        ></textarea>
+
+      <div class="card bg-red">
+        <h2>My Table</h2>
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Column1</th>
+              <th>Column2</th>
+              <th>Column3</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>Str1Clmn1</td>
+              <td>Str1Clmn2</td>
+              <td>Str1Clmn3</td>
+            </tr>
+            <tr>
+              <td>Str2Clmn1</td>
+              <td>Str2Clmn2</td>
+              <td>Str2Clmn3</td>
+            </tr>
+            <tr>
+              <td>Str3Clmn1</td>
+              <td>Str3Clmn2</td>
+              <td>Str3Clmn3</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <input type="submit" value="кнопка" />
-    </form>
+
+      <div class="card bg-yellow">
+        <h2>List_2</h2>
+        <ul class="link-list">
+          <li>String 1</li>
+          <li>String 2</li>
+          <li>String 3</li>
+        </ul>
+      </div>
+
+      <form action="/" class="form">
+        <h2>Заполнить форму</h2>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
+          <div class="form-group">
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">сообщение:</label>
+          <textarea
+            id="message"
+            cols="20"
+            rows="5"
+            placeholder="Введите сообщение"
+          ></textarea>
+        </div>
+        <input type="submit" value="кнопка" class="btn" />
+      </form>
+    </div>
   </body>
 </html>

@@ -1,0 +1,42 @@
+.border-1 {
+  /* border-width: 2px; */
+  /* border-style: dashed; */
+  /* border-style: solid; */
+  /* border-color: darkred; */
+  border: 2px solid darkred;
+  border-radius: 5px;
+  /* border-radius: 25%; */
+}
+
+/* bottom, top, right, left */
+.border-2 {
+  border-bottom: 2px solid darkblue;
+  border-top: 5px solid darkgreen;
+  border-bottom-right-radius: 10px;
+}
+
+.border-3 {
+  border-left: 6px solid red;
+  background: lightblue;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.card {
+  border: 2px solid darkblue;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.bg-yellow {
+  background: #fff9dc;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.bg-green {
+  background: #e5ffe7;
+}

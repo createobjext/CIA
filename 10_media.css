@@ -1,0 +1,17 @@
+@media (max-width: 650px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+
+  .form-row {
+    /* margin-bottom: 10px; */
+    display: block;
+  }
+
+  .form-row .form-group {
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,60 @@
+/* inline, block, inline-block */
+/* .inline li {
+  display: inline;
+}
+
+.box {
+  width: 32%;
+  border: 1px solid black;
+  background: #f4f4f4;
+  display: inline-block;
+  box-sizing: border-box; что б в размер входил бордер
+} */
+
+/* ================================= */
+
+.info {
+  display: flex;
+}
+
+.info-text {
+  margin-left: 40px;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-row .form-group {
+  /* width: calc(50% - 20px); */
+  /* display: inline-block; */
+  margin-right: 20px;
+  width: 50%;
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}

@@ -1,0 +1,41 @@
+/* Tag Name */
+body {
+  color: #0f141e;
+  background: #f1f1f1;
+}
+
+/* * { */
+/* background: orange; */
+/* } */
+
+/* ===================Class ===================*/
+.card {
+  padding: 10px;
+  /* background: orange; */
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 24px;
+}
+
+.html {
+  background-color: #e96228;
+  /* color: aquamarine; */
+}
+
+.css {
+  background-color: #2965f1;
+  /* color: aquamarine; */
+}
+
+/* Id */
+#header {
+  /* background: blueviolet; */
+  padding: 10px;
+}
+
+#header,
+.html {
+  margin-bottom: 20px;
+}

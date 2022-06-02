@@ -1,0 +1,25 @@
+.color-1 {
+  color: LightSalmon;
+}
+.color-2 {
+  /* RGB */
+  /* 00-ff */
+  /* color: #4b0082; */
+  color: #000000;
+}
+.color-3 {
+  color: #000;
+}
+.color-4 {
+  /* 0 - 255 */
+  color: rgb(0, 100, 0);
+  /* opacity: 0.2; */
+}
+.color-5 {
+  /* 0 - 255 */
+  /* 4 параметр Прозрачность */
+  color: rgba(0, 100, 0, 0.5);
+}
+.name {
+  color: #602ccf;
+}
